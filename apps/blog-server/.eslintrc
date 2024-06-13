@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": [
+    "eslint-config-egg/typescript",
+    "eslint-config-egg/lib/rules/enforce-node-prefix",
+    // 仅允许使用单引号
+    "eslint-config-egg/lib/rules/quotes",
+  ]
+}
