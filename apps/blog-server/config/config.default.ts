@@ -10,6 +10,15 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
+  config.multipart = {
+    mode: 'file',
+    fileSize: '50mb',
+    whitelist: [
+      '.jpg', '.jpeg', '.png', '.gif', // 允许的文件类型
+      '.pdf', '.doc', '.docx',
+    ],
+  };
+
   config.security = {
     csrf: {
       enable: false,
